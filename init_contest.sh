@@ -13,29 +13,29 @@ read -r -d '' TEMPLATE << 'EOF'
 using namespace std;
 // using namespace atcoder;
 
-#define Yes cout << "Yes" << endl
-#define No cout << "No" << endl
+constexpr int INF = 2e9;
+constexpr array<int, 4> dx = {-1, 1, 0, 0};
+constexpr array<int, 4> dy = {0, 0, -1, 1};
 
-constexpr int INF = 2'000'000'000;
-constexpr int dx[4] = {-1, 1, 0, 0};
-constexpr int dy[4] = {0, 0, -1, 1};
-
-struct Vec2 {
+struct Coord {
     int x, y;
-    auto operator<=>(const Vec2 &other) const = default;
+    auto operator<=>(const Coord &other) const = default;
 };
+
+void Yes() { println("Yes"); }
+void No() { println("No"); }
 
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
-    
-    
+
+
 }
 EOF
 
 for char in "${PROBLEMS[@]}"; do
     FILE_PATH="${CONTEST_NAME}/${CONTEST_NAME}${char}.cpp"
-    
+
     if [ ! -e "$FILE_PATH" ]; then
         echo "$TEMPLATE" > "$FILE_PATH"
     fi

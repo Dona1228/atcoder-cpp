@@ -17,9 +17,9 @@ constexpr int INF = 2e9;
 constexpr array<int, 4> dx = {-1, 1, 0, 0};
 constexpr array<int, 4> dy = {0, 0, -1, 1};
 
-struct Coord {
+struct Vec2 {
     int x, y;
-    auto operator<=>(const Coord &other) const = default;
+    auto operator<=>(const Vec2& other) const = default;
 };
 
 void Yes() { println("Yes"); }

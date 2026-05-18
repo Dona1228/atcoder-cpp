@@ -26,10 +26,7 @@ void Yes() { println("Yes"); }
 void No() { println("No"); }
 
 int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(nullptr);
-
-
+    
 }
 EOF
 

@@ -2,25 +2,22 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "C/C++: g++ アクティブなファイルのビルドとデバッグ",
+            "name": "C++: Build and Debug",
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
-            "args": [],
-            "stopAtEntry": false,
             "cwd": "${fileDirname}",
-            "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
-            "miDebuggerPath": "/usr/bin/gdb",
+            "miDebuggerPath": "gdb",
             "setupCommands": [
                 {
-                    "description": "gdb の整形式表示を有効にする",
+                    "description": "Enable pretty printing",
                     "text": "-enable-pretty-printing",
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "C/C++: g++ アクティブなファイルのビルド"
+            "preLaunchTask": "C++: Build"
         }
     ]
 }

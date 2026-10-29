@@ -1,9 +1,10 @@
 {
+    "version": "2.0.0",
     "tasks": [
         {
-            "type": "shell",
-            "label": "C/C++: g++ アクティブなファイルのビルド",
-            "command": "/usr/bin/g++",
+            "type": "process",
+            "label": "C++: Build",
+            "command": "g++",
             "args": [
                 "-fdiagnostics-color=always",
                 "-std=c++23",
@@ -23,9 +24,7 @@
             "group": {
                 "kind": "build",
                 "isDefault": true
-            },
-            "detail": "GCCを使用したビルド"
+            }
         }
-    ],
-    "version": "2.0.0"
+    ]
 }

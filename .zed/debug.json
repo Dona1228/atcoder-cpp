@@ -1,12 +1,12 @@
 [
     {
-        "label": "C/C++: g++ アクティブなファイルのビルドとデバッグ",
+        "label": "C++: Build and Debug",
         "adapter": "CodeLLDB",
         "request": "launch",
         "program": "$ZED_DIRNAME/$ZED_STEM",
         "cwd": "$ZED_DIRNAME",
         "build": {
-            "command": "/usr/bin/g++",
+            "command": "g++",
             "args": [
                 "-fdiagnostics-color=always",
                 "-std=c++23",
@@ -17,30 +17,7 @@
                 "-o",
                 "$ZED_DIRNAME/$ZED_STEM",
                 "-I",
-                "/home/dona/lib/ac-library"
-            ],
-            "cwd": "$ZED_DIRNAME"
-        }
-    },
-    {
-        "label": "C/C++: clang++ アクティブなファイルのビルドとデバッグ",
-        "adapter": "CodeLLDB",
-        "request": "launch",
-        "program": "$ZED_DIRNAME/$ZED_STEM",
-        "cwd": "$ZED_DIRNAME",
-        "build": {
-            "command": "/usr/bin/clang++",
-            "args": [
-                "-fcolor-diagnostics",
-                "-std=c++23",
-                "-g",
-                "-Wall",
-                "-Wextra",
-                "$ZED_FILE",
-                "-o",
-                "$ZED_DIRNAME/$ZED_STEM",
-                "-I",
-                "/home/dona/lib/ac-library"
+                "$HOME/lib/ac-library"
             ],
             "cwd": "$ZED_DIRNAME"
         }

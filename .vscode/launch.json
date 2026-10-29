@@ -2,15 +2,6 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "C/C++: clang++ アクティブなファイルのビルドとデバッグ",
-            "type": "lldb",
-            "request": "launch",
-            "program": "${fileDirname}/${fileBasenameNoExtension}",
-            "args": [],
-            "cwd": "${workspaceFolder}",
-            "preLaunchTask": "C/C++: clang++ アクティブなファイルのビルド"
-        },
-        {
             "name": "C/C++: g++ アクティブなファイルのビルドとデバッグ",
             "type": "cppdbg",
             "request": "launch",

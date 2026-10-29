@@ -2,32 +2,6 @@
     "tasks": [
         {
             "type": "shell",
-            "label": "C/C++: clang++ アクティブなファイルのビルド",
-            "command": "/usr/bin/clang++",
-            "args": [
-                "-fcolor-diagnostics",
-                "-std=c++23",
-                "-g",
-                "-Wall",
-                "-Wextra",
-                "${file}",
-                "-o",
-                "${fileDirname}/${fileBasenameNoExtension}",
-                "-I",
-                "/home/dona/lib/ac-library"
-            ],
-            "options": {
-                "cwd": "${fileDirname}"
-            },
-            "problemMatcher": ["$gcc"],
-            "group": {
-                "kind": "build",
-                "isDefault": false
-            },
-            "detail": "Clangを使用したビルド"
-        },
-        {
-            "type": "shell",
             "label": "C/C++: g++ アクティブなファイルのビルド",
             "command": "/usr/bin/g++",
             "args": [

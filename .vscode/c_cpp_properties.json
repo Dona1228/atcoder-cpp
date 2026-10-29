@@ -4,7 +4,7 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/home/dona/lib/ac-library"
+                "${userHome}/lib/ac-library"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/g++",

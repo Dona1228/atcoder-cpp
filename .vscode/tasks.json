@@ -14,7 +14,7 @@
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}",
                 "-I",
-                "/home/dona/lib/ac-library"
+                "${userHome}/lib/ac-library"
             ],
             "options": {
                 "cwd": "${fileDirname}"

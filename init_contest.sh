@@ -13,7 +13,7 @@ read -r -d '' TEMPLATE << 'EOF'
 using namespace std;
 // using namespace atcoder;
 
-constexpr int INF = 2e9;
+constexpr int INF = 2'000'000'000;
 constexpr array<int, 4> dx = {-1, 1, 0, 0};
 constexpr array<int, 4> dy = {0, 0, -1, 1};
 

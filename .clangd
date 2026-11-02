@@ -4,3 +4,6 @@ CompileFlags:
         - "-Wall"
         - "-Wextra"
         - "-I/home/dona/lib/ac-library"
+
+Completion:
+    HeaderInsertion: Never
